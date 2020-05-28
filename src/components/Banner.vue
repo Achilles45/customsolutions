@@ -60,4 +60,18 @@ export default {
         }
     }
 }
+
+//Media queries
+@media only screen and (max-width: 600px){
+    .banner{
+        padding: 5rem 2rem !important;
+    }
+    .banner__card{
+        padding: 3rem 2rem !important;
+        h1{
+            font-weight: bold !important;
+            font-size: 2rem !important;
+        }
+    }
+}
 </style>

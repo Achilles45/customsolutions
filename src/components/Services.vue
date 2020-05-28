@@ -172,4 +172,15 @@ export default {
     transform: translateX(0px);
   }
 }
+
+//Media queries
+@media only screen and (max-width: 600px){
+  .text{
+    h1{
+    font-weight: bolder;
+    color: #000;
+    font-size: 2.3rem !important;
+  }
+  }
+}
 </style>

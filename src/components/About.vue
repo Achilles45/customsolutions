@@ -4,7 +4,7 @@
           <div class="row">
               <!-- <div class="col-md-2"></div> -->
               <div class="col-md-6 about__img__holder">
-                  <img src="../assets/images/designs2.jpg" class="img-fluid" alt="">
+                  <img src="../assets/images/designs2.jpg" class="img-fluid" alt=""><br><br>
               </div>
               <div class="col-md-1"></div>
               <div class="col-md-5 text">
@@ -47,7 +47,7 @@ export default {
         .heading{
         h1{
             font-weight: 900;
-            color: #000;
+            color: #2b2b2b;
             font-size: 2.8rem;
         }
     }
@@ -58,16 +58,35 @@ export default {
         padding-bottom: 2rem;
     }
     .about__btn{
-        background: $secondary-color;
+        background: $primary-color;
         color: #fff;
         text-decoration: none;
-        padding: 1rem 3rem;
+        padding: 1.2rem 3rem;
         border-radius: 4px;
         font-size: .9rem;
         &:hover{
            background-image: linear-gradient(to right, $secondary-color , $tertiary-color);
            transition: all ease-in-out .5s !important;
         }
+    }
+    }
+}
+
+//Media queries
+@media only screen and (max-width: 600px){
+    .about{
+        padding: 4rem 0 !important;
+        .about__img__holder::after{
+        display: none !important;
+    } 
+    .text{
+        .heading{
+        h1{
+            font-weight: 900;
+            color: #2b2b2b;
+            font-size: 2.3rem !important;
+        }
+    }
     }
     }
 }

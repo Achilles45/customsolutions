@@ -193,4 +193,21 @@ export default {
     }
     }
 }
+
+//Media queries
+@media only screen and (max-width: 600px){
+    .banner{
+        padding: 5rem 2rem !important;
+    }
+     .action__card{
+        padding: 4rem 2rem !important;
+        h1{
+            font-weight: bold !important;
+            font-size: 2rem !important;
+        }
+        p{
+            padding-bottom: 3rem !important;
+        }
+    }
+}
 </style>

@@ -156,8 +156,35 @@ export default {
   .hero{
     padding: 8rem 0;
     height: 80vh !important;
-    .social__holder, .balls__holder{
+    .social__holder{
       display: none;
+    }
+    .balls__holder{
+      .ball{
+        height: 12px !important;
+        width: 12px !important;
+      }
+      .ball1{
+     background: #EB4D70;
+     left: 5%;
+     bottom: 40% !important;
+   }
+    .ball2{
+     background: $secondary-color;
+     right: 60%;
+     top: 10%;
+     animation-delay: 4s;
+   }
+    .ball3{
+     background: #554F7F;
+     right: 30%;
+   }
+    .ball4{
+     background: #FF9A68;
+     right: 5%;
+     top: 10% !important;
+     animation-delay: 7s;
+   }
     }
     .hero__img{
       max-width: 200px;

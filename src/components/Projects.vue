@@ -1,6 +1,6 @@
 <template>
   <div class="project">
-      <div class="pattern__holder">
+      <div class="pattern__holder d-none d-md-block">
           <img src="../assets/images/pattern1.svg" class="img-fluid pattern" alt="">
       </div>
       <div class="container">
@@ -125,5 +125,18 @@ export default {
 .card3:hover .details3{
     display: block !important;
     transition: all ease-in-out .5s;
+}
+
+//Media queries
+@media only screen and (max-width: 600px){
+    .project{
+        h2{
+            font-size: 2rem !important;
+        }
+    }
+    .projects__wrapper{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+        grid-gap: 40px !important;
+    }
 }
 </style>
