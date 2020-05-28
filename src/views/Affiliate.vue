@@ -61,7 +61,7 @@ export default {
 }
 .affiliate__body{
     padding-top: 6rem;
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
         .image__holder::after{
         content: "";
         width: 200px;
@@ -123,7 +123,8 @@ export default {
        display: none !important;
    }
    .affiliate__body{
-       padding: 3rem 0 !important;
+       padding-top: 3rem !important;
+       padding-bottom: 3rem !important;
        h2{
            padding-top: 2rem;
            font-size: 2rem !important;
