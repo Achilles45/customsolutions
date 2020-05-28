@@ -11,7 +11,7 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-7">
-                      <img src="../assets/images/school3.jpg" class="img-fluid" alt="">
+                      <img src="../assets/images/school3.jpg" class="img-fluid" alt=""><br><br>
                   </div>
                   <div class="col-md-5">
                       <h3>Complete School Management Solution</h3>
@@ -99,5 +99,14 @@ export default {
             }
         }
     }
+}
+
+//Media queries
+@media only screen and (max-width: 600px){
+   .detials__wrapper{
+       h1{
+        font-size: 1.5rem !important;
+       }
+   } 
 }
 </style>

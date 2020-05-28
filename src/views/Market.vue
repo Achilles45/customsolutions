@@ -3,7 +3,7 @@
       <Navbar />
       <div class="market__wrapper">
           <div class="container">
-              <h1>Our Marketplace</h1>
+              <h1>Marketplace</h1>
               <p>Explore our marketplace to see some of our products!</p>
           </div>
       </div>
