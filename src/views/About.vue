@@ -30,7 +30,7 @@
             <h3>SEE WHY OUR CLIENTS TRUST US</h3>
           </div>
         </div>
-        <div class="row pt-5">
+        <div class="row text-center pt-5">
           <div class="col-md-3">
             <img src="../assets/images/care.svg" class="icons" alt="">
             <h5>24/7 Customer Support</h5>
@@ -177,7 +177,7 @@ export default {
   .trust{
     padding-top: 4rem;
     padding-bottom: 4rem;
-    background: #fafafa;
+    // background: #fafafa;
     .heading{
       p{
         color: $tertiary-color;
@@ -220,7 +220,7 @@ export default {
     .team__wrapper{
       margin-top: 2rem;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       grid-gap: 30px;
       .team__card{
         box-shadow: 0 7px 50px -10px rgba(0,0,0,.17);
@@ -246,5 +246,34 @@ export default {
       }
     }
   }
+}
+
+//Media queries
+@media only screen and (max-width: 600px){
+  //  .about__wrapper{
+  //    padding: 2rem 0 !important;
+  //  }
+   .about__content{
+     h3{
+       padding-top: 3rem;
+       font-size: 1.3rem !important;
+       line-height: 1.5;
+     }
+     .image__holder::after{
+       display: none !important;
+     }
+   }
+   .trust{
+     h3{
+       font-size: 1.5rem !important;
+     }
+   }
+    .team{
+     h2{
+       font-size: 1.5rem !important;
+       font-weight: bolder;
+       text-align: center;
+     }
+   }
 }
 </style>

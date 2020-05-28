@@ -7,7 +7,7 @@
                       <div class="col-md-7">
                           <h1>Custom Made Solutions?</h1>
                           <p>We pride ourselves in building solutions that works. From complete School management software to eCommerce websites, you are sure of getting solutions that specifically suits your business needs.</p>
-                          <router-link to="/marketplace" class="link__btn">See Our Marketplace</router-link>
+                          <router-link to="/marketplace" class="link__btn">Our Marketplace</router-link>
                       </div>
                   </div>
               </div>

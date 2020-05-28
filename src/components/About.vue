@@ -12,7 +12,7 @@
                   <h1><strong>WHO ARE WE</strong></h1>
               </div>
                   <p>We're a technology agency that provides beautiful and top notch digital products and services ranging from website design, graphics design, digital marketing and others that makes business operations efficient and thus increasing sales for our clients.</p>
-                  <router-link to="/marketplace" class="about__btn">Begin a Project</router-link>
+                  <router-link to="/about" class="about__btn">Read more</router-link>
               </div>
           </div>
       </div>
