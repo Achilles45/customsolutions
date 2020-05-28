@@ -9,6 +9,7 @@ import RealEstate from '../views/RealEstate'
 import Hospital from '../views/Hospital'
 import Inventory from '../views/Inventory'
 import Contact from '../views/Contact'
+import Affiliate from '../views/Affiliate'
 
 Vue.use(VueRouter)
 
@@ -65,6 +66,11 @@ Vue.use(VueRouter)
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/affiliate',
+    name: 'Affiliate',
+    component: Affiliate
   },
 ]
 
