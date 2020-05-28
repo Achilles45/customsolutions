@@ -19,8 +19,8 @@
                       <h2>Earn 5% when you refer a client to us</h2>
                       <p>We have an amazing affiliate program that allows you to earn money irrespective of your skills when you refer someone to buy any of our products or services. The 5% of the total value of the sales will be paid instantly to your back account. No stress as you can actually do this from home.</p>
                       <div class="button__holder">
-                          <router-link to="/affiiate/register" class="affiliate__btn register">Create Account</router-link>
-                          <router-link to="/affiiate/login" class="affiliate__btn login">Login</router-link>
+                          <router-link to="/affiliate/register" class="affiliate__btn register">Create Account</router-link>
+                          <router-link to="/affiliate/login" class="affiliate__btn login">Login</router-link>
                       </div>
                   </div>
               </div>

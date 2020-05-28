@@ -6,26 +6,16 @@
             <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
-                <h1>Register as an affiliate</h1>
+                <h1>Signin to your account</h1>
                 <form action="">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Full Name *">
-                    </div>
                      <div class="form-group">
                         <input type="text" class="form-control" placeholder="Email Address *">
                     </div>
                      <div class="form-group">
-                        <input type="tel" class="form-control" placeholder="Phone Number *">
-                    </div>
-                     <div class="form-group">
                         <input type="password" class="form-control" placeholder="Password *">
                     </div>
-                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Repeat Password *">
-                    </div>
-                    <small>By clicking on the register button, you agree to our terms and conditions</small><br>
-                    <small>Have an account already? <router-link to="/affiliate/login">Log in</router-link></small><br><br>
-                    <button type="submit" class="register__btn">Create Account</button>
+                    <small>Yet to have an account? <router-link to="/affiliate/register">Create a free account</router-link></small><br><br>
+                    <button type="submit" class="register__btn">Sign In</button>
                 </form>
             </div>
             <div class="col-md-3"></div>

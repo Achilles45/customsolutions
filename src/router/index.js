@@ -11,6 +11,7 @@ import Inventory from '../views/Inventory'
 import Contact from '../views/Contact'
 import Affiliate from '../views/Affiliate'
 import Register from '../views/Register'
+import Login from '../views/Login'
 
 Vue.use(VueRouter)
 
@@ -74,9 +75,14 @@ Vue.use(VueRouter)
     component: Affiliate
   },
   {
-    path: '/affiiate/register',
+    path: '/affiliate/register',
     name: 'Register',
     component: Register
+  },
+  {
+    path: '/affiliate/login',
+    name: 'Login',
+    component: Login
   },
 ]
 
