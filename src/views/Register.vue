@@ -89,4 +89,13 @@ export default {
         }
     }
 }
+
+//Media Queries
+@media only screen and (max-width: 600px){
+    h1{
+        font-size: 1.7rem !important;
+        text-align: center;
+        line-height: 1.6;
+    }
+}
 </style>
