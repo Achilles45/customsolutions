@@ -144,7 +144,7 @@ export default {
             .market__btn{
                 background: $primary-color;
                 text-decoration: none;
-                padding: .7rem 2rem;
+                padding: 1rem 2rem;
                 border-radius: 3px;
                 color: #fff;
                 font-size: .8rem;

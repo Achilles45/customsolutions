@@ -16,9 +16,9 @@
 	<!-- Wrapper for carousel items -->
 	<div class="carousel-inner">		
 		<div class="item carousel-item active">
-			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
-			<p class="testimonial">Wawo, i just got my money..Diamond Investment is real, l have never seen a platform that this easy to pay, easy to receive,and easy to be confirmed..God bless you guys, l love you all and may God keep strengthen to this..Thank you so much..</p>
-			<p class="overview"><b>Owoh, Ann Echeleme</b>Investor</p>
+			<div class="img-box"><img src="../assets/images/anita.jpg" alt=""></div>
+			<p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quisquam animi. Necessitatibus at voluptatem in?</p>
+			<p class="overview"><b>Achilles E.</b></p>
 			<div class="star-rating">
 				<ul class="list-inline">
 					<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -30,7 +30,7 @@
 			</div>
 		</div>
 		<div class="item carousel-item">
-			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
+			<div class="img-box"><img src="../assets/images/achilles.jpg" alt=""></div>
 			<p class="testimonial">Thank you Diamond Investment.. Am so happy to be part of this platform</p>
 			<p class="overview"><b> Abajingin Ayokanmi D</b>Investor</p>
 			<div class="star-rating">
@@ -45,8 +45,8 @@
 		</div>
 		<div class="item carousel-item">
 			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
-			<p class="testimonial">Diamond investment is real my brother.. Come and joined the winning team</p>
-			<p class="overview"><b>Braimah Sanusi Elabor</b>Investor</p>
+		<p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quisquam animi. Necessitatibus at voluptatem in?</p>
+			<p class="overview"><b>Achilles E.</b></p>
 			<div class="star-rating">
 				<ul class="list-inline">
 					<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -59,8 +59,8 @@
 		</div>	
 		<div class="item carousel-item">
 			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
-			<p class="testimonial">Diamond has done it again, alert keeps on entering, thanks to the day I joined this great platform, it keeps making me smiling every now and then, thanks Diamond Investment</p>
-			<p class="overview"><b>Iheanyichukwu Uchegbu</b>Investor</p>
+			<p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quisquam animi. Necessitatibus at voluptatem in?</p>
+			<p class="overview"><b>Achilles E.</b></p>
 			<div class="star-rating">
 				<ul class="list-inline">
 					<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -73,8 +73,8 @@
 		</div>	
 		<div class="item carousel-item">
 			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
-			<p class="testimonial">I didn't believe it was real initially, Just received my first money now and I am really pleased. Thanks Diamond</p>
-			<p class="overview"><b>Chiedozie Udemmadu</b>Investor</p>
+			<p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quisquam animi. Necessitatibus at voluptatem in?</p>
+			<p class="overview"><b>Achilles E.</b></p>
 			<div class="star-rating">
 				<ul class="list-inline">
 					<li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -87,8 +87,8 @@
 		</div>		
 		<div class="item carousel-item">
 			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
-			<p class="testimonial">Diamond is a trusted investment site, if you don't join now, you will join later.</p>
-			<p class="overview"><b>Ahmed Abdulquadir</b>Investor</p>
+			<p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quisquam animi. Necessitatibus at voluptatem in?</p>
+			<p class="overview"><b>Achilles E.</b></p>
 			<div class="star-rating">
 				<ul class="list-inline">
 					<li class="list-inline-item"><i class="fa fa-star"></i></li>

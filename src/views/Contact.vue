@@ -18,7 +18,7 @@
             <h6><i class="fa fa-envelope"></i>Email Address</h6>
             <p>support@customsolutions.com</p>
              <h6><i class="fa fa-phone"></i>Phone Number/Whatsapp</h6>
-             <p><a href="tel:08103515205">08103515205</a></p>
+             <p><a href="tel:08103515205">08103515205</a></p><br>
          </div>
          <div class="col-md-1"></div>
          <div class="col-md-5 text">
@@ -144,5 +144,22 @@ form{
             transition: all ease-in-out .5s;
         }
     }
+}
+
+//Media Queries
+@media only screen and (max-width: 600px){
+  .text{
+    h2{
+      font-size: 2rem !important;
+    }
+    h5{
+      padding-bottom: 2rem !important;
+    }
+    p{
+      font-size: .9rem !important;
+      color: #676767 !important;
+      line-height: 1.7;
+    }
+  }
 }
 </style>
