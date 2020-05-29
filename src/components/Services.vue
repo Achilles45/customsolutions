@@ -19,7 +19,7 @@
               <div class="services__body">
                 <h5><router-link to="/" class="heading">Website Design and Development</router-link></h5>
                 <p>Get beautifully crafted, functional websites and web applications that will increase leads for your business today.</p>
-                <router-link to="/about" class="card__link">Read more <i class="fa fa-long-arrow-alt-right"></i></router-link>
+                <!-- <router-link to="/about" class="card__link">Read more <i class="fa fa-long-arrow-alt-right"></i></router-link> -->
               </div>
             </div>
              <div class="service__card">
@@ -31,7 +31,7 @@
               <div class="services__body">
                 <h5><router-link to="/" class="heading">Branding and Graphics Design</router-link></h5>
                 <p>Engage with your customers with our colorful and expertly designed graphics for your brand</p>
-                <router-link to="/" class="card__link">Read more <i class="fa fa-long-arrow-alt-right"></i></router-link>
+                <!-- <router-link to="/" class="card__link">Read more <i class="fa fa-long-arrow-alt-right"></i></router-link> -->
               </div>
             </div>
             </div>
@@ -44,7 +44,7 @@
               <div class="services__body">
                 <h5><router-link to="/" class="heading">Mobile Applications Development</router-link></h5>
                 <p>You need a mobile app for your business or idea, we've got your back. Reach out to us today!</p>
-                <router-link to="/" class="card__link">Read more <i class="fa fa-long-arrow-alt-right"></i></router-link>
+                <!-- <router-link to="/" class="card__link">Read more <i class="fa fa-long-arrow-alt-right"></i></router-link> -->
               </div>
             </div>
             </div>
