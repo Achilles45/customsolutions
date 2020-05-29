@@ -15,7 +15,7 @@
         <div class="row">
           <div class="col-md-6 text">
             <h1 class="animate__animated animate__slideInUp"><strong>Enabling businesses with digital solutions</strong></h1>
-            <p>We provide efficient digital products and services ranging from website designs, graphics design, digital marketing, to mobile applications development and other tools needed to thrive.</p>
+            <p>We pride ourselves in building solutions that works. From the simplest web pages to highly complex web and mobile applications, you are sure of getting solutions that specifically suits your business needs.</p>
             <div class="pb-5">
               <router-link to="/" class="hero__btn">Start A Project&nbsp;&nbsp; <i class="fa fa-long-arrow-alt-right"></i></router-link>
             </div>

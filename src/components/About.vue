@@ -11,7 +11,7 @@
                    <div class="heading">
                   <h1><strong>WHO ARE WE</strong></h1>
               </div>
-                  <p>We're a technology agency that provides beautiful and top notch digital products and services ranging from website design, graphics design, digital marketing and others that makes business operations efficient and thus increasing sales for our clients.</p>
+                  <p>We are a technology agency who prides ourselves in building solutions that works. From complete School management software to eCommerce websites, you are sure of getting solutions that specifically suits your business needs. <br>More than anyone else, we understand the digital landscape and our professionals are waiting to fly your brand to the moon.</p>
                   <router-link to="/about" class="about__btn">Read more</router-link>
               </div>
           </div>

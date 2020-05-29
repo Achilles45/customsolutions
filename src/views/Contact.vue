@@ -24,19 +24,26 @@
          <div class="col-md-5 text">
            <h2>Send us a message</h2>
            <p>You can send in your enquiries and the team will reach you in less than 24 hours</p>
-           <form action="">
+           <form @submit.prevent="contact()">
                <div class="form-group">
-                   <input type="text" class="form-control" placeholder="Full name">
+                   <input type="text" class="form-control" placeholder="Full name" v-model="name">
                </div>
                 <div class="form-group">
-                   <input type="text" class="form-control" placeholder="Email address">
+                   <input type="text" class="form-control" placeholder="Email address" v-model="email">
                </div>
                 <div class="form-group">
-                   <input type="tel" class="form-control" placeholder="Phone Number">
+                   <input type="tel" class="form-control" placeholder="Phone Number" v-model="phone_number">
                </div>
                <div class="form-group">
-                   <textarea name="" id="" cols="10" rows="6" class="form-control">Your mesage</textarea>
+                   <textarea name="" id="" cols="10" rows="6" class="form-control" v-model="message" placeholder="Your message">
+                     </textarea>
                </div>
+               <div v-if="err" class="alert alert-danger">
+               {{err}}
+             </div>
+             <div v-if="success" class="alert alert-success">
+               {{success}}
+             </div>
                <button type="submit" class="form__btn">Send Message</button>
            </form>
          </div>
@@ -54,6 +61,27 @@ export default {
   components:{
     Navbar,
     Footer
+  },
+  data(){
+    return{
+      name: null,
+      email: null,
+      phone_number:null,
+      message:null,
+      err:null,
+      success:null
+    }
+  },
+  methods:{
+    contact(){
+      //Check if the user has filled out form completely
+      if(!this.name || !this.email || !this.phone_number || !this.message){
+        this.err = 'Please fill out the form and try again!'
+      }else{
+        //Send a success message to the user
+        this.success = 'Message sent. We will get back to you soon!'
+      }
+    },
   }
 }
 </script>
@@ -115,7 +143,7 @@ form{
     margin-top: 2rem;
     input{
         border-radius: 0;
-        box-shadow: none;
+        box-shadow: none !important;
         height: 3rem;
         &::placeholder{
             font-size: .9rem;
@@ -126,7 +154,7 @@ form{
     }
     textarea{
         border-radius: 0;
-        box-shadow: none;
+        box-shadow: none !important;
             font-size: .9rem;
             font-weight: 500;
             color: #676767;
