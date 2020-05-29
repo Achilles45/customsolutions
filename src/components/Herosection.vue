@@ -154,7 +154,7 @@ export default {
 //Media queries
 @media only screen and (max-width: 600px){
   .hero{
-    padding: 8rem 0;
+    padding: 7.5rem 0;
     height: 80vh !important;
     .social__holder{
       display: none;
@@ -192,7 +192,8 @@ export default {
     }
     .text{
       h1{
-        font-size: 1.5rem !important;
+        font-size: 1.7rem !important;
+        line-height: 1.5;
       }
     }
   }
