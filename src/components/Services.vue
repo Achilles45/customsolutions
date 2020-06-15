@@ -177,9 +177,11 @@ export default {
 @media only screen and (max-width: 600px){
   .text{
     h1{
-    font-weight: bolder;
-    color: #000;
+    font-weight: 900;
+    color: #2b2b2b;
     font-size: 2.3rem !important;
+    padding-top: 2rem;
+    padding-bottom: .6rem;
   }
   }
 }

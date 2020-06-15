@@ -7,11 +7,11 @@
                   <img src="../assets/images/designs2.jpg" class="img-fluid" alt=""><br><br>
               </div>
               <div class="col-md-1"></div>
-              <div class="col-md-5 text">
+              <div class="col-md-5 text mt-1">
                    <div class="heading">
                   <h1><strong>WHO ARE WE</strong></h1>
               </div>
-                  <p>We are a technology agency who prides ourselves in building solutions that works. From complete School management software to eCommerce websites, you are sure of getting solutions that specifically suits your business needs. <br>More than anyone else, we understand the digital landscape and our professionals are waiting to fly your brand to the moon.</p>
+                  <p>We are a technology agency who build solutions that specifically suit your business needs and make your operations simplified and more efficient. More than anyone else, we understand the digital landscape and our professionals are waiting to fly your brand to the moon.</p>
                   <router-link to="/about" class="about__btn">Read more</router-link>
               </div>
           </div>
@@ -52,10 +52,11 @@ export default {
         }
     }
          p{
-        color: #676767;
+        color: #2b2b2b;
         padding-top: .7rem;
         line-height: 2;
         padding-bottom: 2rem;
+        opacity: .9;
     }
     .about__btn{
         background: $primary-color;

@@ -69,7 +69,7 @@ export default {
     border-radius: 50px;
     transition: all ease-in-out .5s;
     &:hover{
-      padding: 1.1rem 3.5rem;
+      padding: 1.4rem 3.5rem;
     }
   }
   .fa-long-arrow-alt-right{
@@ -156,7 +156,7 @@ export default {
 //Media queries
 @media only screen and (max-width: 600px){
   .hero{
-    padding: 7.5rem 0;
+    padding: 7rem 0 !important;
     height: 80vh !important;
     .social__holder{
       display: none;

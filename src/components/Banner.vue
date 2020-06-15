@@ -6,7 +6,7 @@
                   <div class="row">
                       <div class="col-md-7">
                           <h1>Custom Made Solutions?</h1>
-                          <p>We pride ourselves in building solutions that works. From complete School management software to eCommerce websites, you are sure of getting solutions that specifically suits your business needs.</p>
+                          <p>We think about your users or customers while crafting our products and services to make sure our solutions specifically suit your business needs. </p>
                           <router-link to="/marketplace" class="link__btn">Our Marketplace</router-link>
                       </div>
                   </div>
@@ -48,13 +48,13 @@ export default {
             background: #000;
             color: #fff;
             text-decoration: none;
-            padding: 1.2rem 3rem;
+            padding: 1.3rem 3rem;
             border-radius: 6px;
             font-size: .9rem;
             &:hover{
-                background: $tertiary-color;
+                padding: 1.2rem 3.5rem;
                 font-weight: bold;
-                color: #000;
+                color: #fff;
                 transition: all ease-in-out .5s;
             }
         }
@@ -67,10 +67,15 @@ export default {
         padding: 5rem 2rem !important;
     }
     .banner__card{
-        padding: 3rem 2rem !important;
+        padding: 4rem 2rem !important;
         h1{
             font-weight: bold !important;
-            font-size: 2rem !important;
+            font-size: 1.5rem !important;
+            line-height: 1.6;
+        }
+        p{
+            font-size: .9rem !important;
+            opacity: .7 !important;
         }
     }
 }

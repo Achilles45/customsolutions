@@ -138,6 +138,7 @@ export default {
             font-size: 1.5rem !important;
             color:#2b2b2b;
             padding-top: .5rem;
+            font-weight: bold;
         }
     }
     .projects__wrapper {
@@ -147,7 +148,7 @@ export default {
        overflow-x: auto;
         margin-bottom: .5rem !important;
        .project__card{
-           min-width: 260px;
+           min-width: 270px;
            background: #fff;
            color:#627081;
             margin: 0 .5rem;

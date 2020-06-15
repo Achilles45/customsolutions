@@ -3,18 +3,18 @@
       <div class="container">
           <div class="row">
               <div class="col-md-4 logo__text">
-                  <img src="../assets/images/logo.png" class="img-fluid" alt="">
+                  <!-- <img src="../assets/images/logo.png" class="img-fluid" alt=""> -->
                   <p>&copy; 2020. Custom Solutions Technologies <br>All rights reserved</p>
               </div>
               <div class="col-md-4 contact">
                   <h6>Contact Details</h6>
-                  <p><i class="fa fa-envelope"></i> &nbsp;&nbsp; <a href="mailto: support@customsolutions.com">support@customsolutions.com</a></p>
+                  <p><i class="far fa-envelope-open"></i> &nbsp;&nbsp; <a href="mailto: support@customsolutions.com">support@customsolutions.com</a></p>
                   <p><i class="fa fa-phone"></i> &nbsp;&nbsp; <a href="tel:08103515205">(+234)8103515205</a></p>
                   <p><i class="fa fa-map-marker"></i> &nbsp;&nbsp; Remote</p>
               </div>
               <div class="col-md-4">
                   <h6>Message Desk</h6>
-                  <p>We're glad to have you here. We have over 5 years of experience building digital products and solutions that increase sales and brand awareness for your business. Try us today!</p>
+                  <p>We're glad to have you here. We have over 5 years of experience building digital products and experinces that increase sales and brand awareness for your business. Talk to us today!</p>
               </div>
           </div>
       </div>
@@ -44,7 +44,7 @@ footer{
         opacity: .4;
         line-height: 1.8;
     }
-    .fa-envelope, .fa-phone, .fa-map-marker{
+    .fa-envelope-open, .fa-phone, .fa-map-marker{
         margin-right: 1rem;
     }
     a{
