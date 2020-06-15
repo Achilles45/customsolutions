@@ -74,7 +74,7 @@ export default {
             color: #2b2b2b;
         }
         p{
-            color: #676767;
+            color: #627081;
             font-weight: 400;
             line-height: 1.8;
             // padding-bottom: 2rem;
