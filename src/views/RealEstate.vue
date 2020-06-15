@@ -79,7 +79,7 @@ export default {
         p{
             color: #627081;
             font-weight: 400;
-            line-height: 1.8;
+            line-height: 2;
             // padding-bottom: 2rem;
             font-size: .95rem;
         }

@@ -136,9 +136,9 @@ export default {
                 // padding-bottom: 1rem;
             }
             p{
-                color: #627081;
-                padding-bottom: 1rem;
+                color: #676767;
                 font-size: .9rem;
+                padding-bottom: 1rem;
                 line-height: 1.6;
             }
             .market__btn{

@@ -52,7 +52,8 @@ export default {
         }
     }
          p{
-        color: #2b2b2b;
+        color: #676767;
+        font-size: .95rem;
         padding-top: .7rem;
         line-height: 2;
         padding-bottom: 2rem;

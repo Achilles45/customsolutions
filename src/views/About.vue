@@ -16,7 +16,7 @@
          <div class="col-md-1"></div>
          <div class="col-md-5">
            <h3>5+ YEARS OF BUILDING AMAZING USER EXPERIENCES</h3>
-           <p>We enable businesses to take advantage of the numerous opportunities that the internet provides today. The COVID19 pandemic has caused a shift into how businesses are conducted and if your business has no online presense, then you are seriously loosing out. Our solutions whether in website design and development, graphics design, mobile applications development are beautifully crafted with your users in mind. Try us today!</p>
+           <p>We enable businesses to take advantage of the numerous opportunities that the internet provides today. The COVID19 pandemic has caused a shift into how businesses are conducted and if your business has no online presense, then you are seriously loosing out. Our solutions either in website design and development, graphics design, mobile applications development are beautifully crafted with your users in mind. Talk to us today!</p>
            <router-link to="/" class="request__btn">Begin a Project</router-link>
          </div>
        </div>
@@ -54,7 +54,7 @@
         </div>
       </div>
     </div>
-    <div class="team">
+    <!-- <div class="team">
       <div class="container">
         <div class="row">
           <div class="col-12 heading">
@@ -100,7 +100,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <Footer />
   </div>
 </template>
@@ -143,8 +143,8 @@ export default {
       padding-bottom: 1rem;
     }
     p{
-      line-height: 1.9;
-      color: #676767;
+      line-height: 2;
+      color: #627081;
       font-size: .95rem;
       padding-bottom: 2rem;
     }
