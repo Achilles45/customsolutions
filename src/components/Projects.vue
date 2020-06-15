@@ -11,19 +11,19 @@
               </div>
           </div>
           <div class="projects__wrapper">
-              <div class="project__card card1">
-                  <div class="project__detials details1 animate__animated animate__zoomIn text-center">
-                      <p>Forex trade training and investment website</p>
-                      <p><a href="https://www.uratraining.net" target="_blank">uratraining.net</a></p>
-                  </div>
-                  <img src="../assets/images/screenshot1.jpg" class="img-fluid screenshot" alt="">
-              </div>
                <div class="project__card card2">
                     <div class="project__detials details2 animate__animated animate__zoomIn text-center">
                       <p>Website for Jubilee Rentals, an event rental outfit in Delta State</p>
                       <p><a href="https://jubileerentalsoz.com" target="_blank">jubileerentalsoz.com</a></p>
                   </div>
                   <img src="../assets/images/screenshot2.jpg" class="img-fluid screenshot" alt="">
+              </div>
+              <div class="project__card card1">
+                  <div class="project__detials details1 animate__animated animate__zoomIn text-center">
+                      <p>Forex trade training and investment website</p>
+                      <p><a href="https://www.uratraining.net" target="_blank">uratraining.net</a></p>
+                  </div>
+                  <img src="../assets/images/screenshot1.jpg" class="img-fluid screenshot" alt="">
               </div>
                <div class="project__card card3">
                     <div class="project__detials details3 animate__animated animate__zoomIn text-center">
@@ -130,8 +130,14 @@ export default {
 //Media queries
 @media only screen and (max-width: 600px){
     .project{
+         padding: 4rem 0 !important;
+        h6{
+            font-size: .8rem;
+        }
         h2{
-            font-size: 2rem !important;
+            font-size: 1.5rem !important;
+            color:#2b2b2b;
+            padding-top: .5rem;
         }
     }
     .projects__wrapper {
@@ -141,14 +147,16 @@ export default {
        overflow-x: auto;
         margin-bottom: .5rem !important;
        .project__card{
-           min-width: 400px;
+           min-width: 300px;
            background: #fff;
            color:#627081;
-            margin: 0 1rem;
+            margin: 0 .5rem;
            border-radius: 3px;
        }
-        .scrolling-wrapper {
-        -webkit-overflow-scrolling: scroll;
+        .projects__wrapper {
+        -webkit-overflow-scrolling: auto !important;
+        background: red;
+        width: 100px;
         }
     }
 }
