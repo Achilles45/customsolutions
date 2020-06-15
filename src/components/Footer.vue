@@ -35,7 +35,7 @@ footer{
     padding-bottom: 3rem;
     h6{
         padding-top: 1.5rem;
-        opacity: .8;
+        opacity: .6;
         font-weight: bold;
         padding-bottom: 1.5rem;
     }

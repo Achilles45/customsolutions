@@ -147,7 +147,7 @@ export default {
        overflow-x: auto;
         margin-bottom: .5rem !important;
        .project__card{
-           min-width: 300px;
+           min-width: 260px;
            background: #fff;
            color:#627081;
             margin: 0 .5rem;
