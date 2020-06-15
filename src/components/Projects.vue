@@ -134,9 +134,22 @@ export default {
             font-size: 2rem !important;
         }
     }
-    .projects__wrapper{
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
-        grid-gap: 40px !important;
+    .projects__wrapper {
+       display: flex !important;
+       min-width: 100%;
+       min-height: 200px;
+       overflow-x: auto;
+        margin-bottom: .5rem !important;
+       .project__card{
+           min-width: 400px;
+           background: #fff;
+           color:#627081;
+            margin: 0 1rem;
+           border-radius: 3px;
+       }
+        .scrolling-wrapper {
+        -webkit-overflow-scrolling: scroll;
+        }
     }
 }
 </style>

@@ -80,7 +80,7 @@ export default {
         .logo{
             text-decoration: none;
            .logo__img{
-               max-width: 300px;
+               max-width: 270px;
                height: auto;
            }
         }
@@ -91,6 +91,7 @@ export default {
                 font-weight: 400;
                 opacity: .8;
                 color: #fff;
+                font-size: .9rem;
             }
         }
         .navbar__toggler{

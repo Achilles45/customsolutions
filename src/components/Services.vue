@@ -132,7 +132,7 @@ export default {
           font-weight: 500;
         }
         .heading{
-          color:#000;
+          color:#484848;
           font-weight: bold;
           line-height: 1.4;
           font-size: 1.3rem;

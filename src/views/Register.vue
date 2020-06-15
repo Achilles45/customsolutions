@@ -7,25 +7,40 @@
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <h1>Register as an affiliate</h1>
-                <form action="">
+                <form @submit.prevent="register()">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Full Name *">
+                        <input type="text" class="form-control" placeholder="Full Name *" v-model="name">
                     </div>
                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Email Address *">
+                        <input type="text" class="form-control" placeholder="Email Address *" v-model="email">
                     </div>
                      <div class="form-group">
-                        <input type="tel" class="form-control" placeholder="Phone Number *">
+                        <input type="tel" class="form-control" placeholder="Phone Number *" v-model="phone">
                     </div>
                      <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Password *">
+                        <input type="password" class="form-control" placeholder="Password *" v-model="password">
                     </div>
                      <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Repeat Password *">
+                        <input type="password" class="form-control" placeholder="Repeat Password *" v-model="repeat__password">
                     </div>
+                    <!-- <div class="form-group">
+                        <select name="" id="" class="form-control">
+                            <option value="" disabled selected>Please select your name</option>
+                            <option value="">Okoro</option>
+                            <option value="">Okoro</option>
+                            <option value="">Okoro</option>
+                            <option value="">Okoro</option>
+                        </select>
+                    </div> -->
                     <small>By clicking on the register button, you agree to our terms and conditions</small><br>
                     <small>Have an account already? <router-link to="/affiliate/login">Log in</router-link></small><br><br>
-                    <button type="submit" class="register__btn">Create Account</button>
+                    <div v-if="err" class="alert alert-danger">
+                        {{ err }}
+                    </div>
+                     <div v-if="success" class="alert alert-success">
+                        {{ success }}
+                    </div>
+                    <button type="submit" class="register__btn">{{ text }}</button>
                 </form>
             </div>
             <div class="col-md-3"></div>
@@ -37,12 +52,37 @@
 </template>
 
 <script>
+import firebase from 'firebase'
+import db from '@/firebase/init'
 import Navbar from "@/components/Navbar.vue"
 import Footer from "@/components/Footer.vue"
 export default {
     components:{
         Navbar,
         Footer
+    },
+    data(){
+        return{
+            name: null,
+            email: null,
+            phone: null,
+            password: null,
+            repeat__password: null,
+            err: null,
+            success: null,
+            text: 'Sign In'
+        }
+    },
+    methods:{
+        register(){
+            //Check if all fields has been filled out
+            if(!this.name || !this.email || !this.phone || !this.password || !this.repeat__password){
+                this.err = "jdalfajkdfhakjf"
+                this.text = ''
+            }else{
+                this.success = 'Successful'
+            }
+        }
     }
 }
 </script>
@@ -83,6 +123,7 @@ export default {
              border-radius: 50px;
              width: 100%;
              color: #fff;
+             outline: none;
              &:hover{
                  background: $tertiary-color;
              }
