@@ -18,14 +18,16 @@
                       <hr>
                       <p>If you own a hotel or manage a hotel, we can help automate your business process with our robust solution. With this solution, you can have your customers reserve and book hotel rooms for themselves or their friends from anywhere in the world. You can also manage your inventory, employees, restaurant, bar and every other section of the hotel. You don't want to miss this offer.</p>
                       <h6>What we promise you if you buy this solution</h6>
-                       <div class="row mb-4">
+                        <div class="row mb-4">
                           <div class="col-md-6">
                               <p><i class="fa fa-check-circle"></i>Beautiful Design</p>
                               <p><i class="fa fa-check-circle"></i>Responsive Design</p>
+                                 <p><i class="fa fa-check-circle"></i>Free Domain name</p>
                           </div>
                           <div class="col-md-6">
                               <p><i class="fa fa-check-circle"></i>24/7 Customer support</p>
                               <p><i class="fa fa-check-circle"></i>Working features</p>
+                            <p><i class="fa fa-check-circle"></i>24/7 Corporate email</p>
                           </div>
                       </div>
                       <router-link to="/request" class="request__btn">Request Product</router-link>

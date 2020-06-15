@@ -22,10 +22,12 @@
                           <div class="col-md-6">
                               <p><i class="fa fa-check-circle"></i>Beautiful Design</p>
                               <p><i class="fa fa-check-circle"></i>Responsive Design</p>
+                                 <p><i class="fa fa-check-circle"></i>Free Domain name</p>
                           </div>
                           <div class="col-md-6">
                               <p><i class="fa fa-check-circle"></i>24/7 Customer support</p>
                               <p><i class="fa fa-check-circle"></i>Working features</p>
+                            <p><i class="fa fa-check-circle"></i>24/7 Corporate email</p>
                           </div>
                       </div>
                       <router-link to="/request" class="request__btn">Request Product</router-link>

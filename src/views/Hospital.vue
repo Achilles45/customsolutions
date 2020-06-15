@@ -17,14 +17,16 @@
                       <h3>Hospital/Pharmarcy Solution</h3>
                       <hr>
                       <p>We have created a smart software to help you serve your patients more efficiently. You can now completely keep your record online, accessit anytime, track your patients progress<br>We enable you to serve your patients effectively. You can now manage your drug inventory, employees, and position your brand for greatness.</p>
-                       <div class="row mb-4">
+                        <div class="row mb-4">
                           <div class="col-md-6">
                               <p><i class="fa fa-check-circle"></i>Beautiful Design</p>
                               <p><i class="fa fa-check-circle"></i>Responsive Design</p>
+                                 <p><i class="fa fa-check-circle"></i>Free Domain name</p>
                           </div>
                           <div class="col-md-6">
                               <p><i class="fa fa-check-circle"></i>24/7 Customer support</p>
                               <p><i class="fa fa-check-circle"></i>Working features</p>
+                            <p><i class="fa fa-check-circle"></i>24/7 Corporate email</p>
                           </div>
                       </div>
                       <router-link to="/request" class="request__btn">Request Product</router-link>

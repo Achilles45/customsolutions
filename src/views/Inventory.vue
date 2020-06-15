@@ -18,14 +18,16 @@
                       <hr>
                       <p>If you sell a physical product, you need to find a way to know exactly how many items were supplied, how many was sold and at what price, you also need to know how many is left and every other thing about the business. Our solution allows you to keep proper record on everything that happens in your business in real time, from any device and from anywhere. We've got you and your business covered.</p>
                       <h6>What we promise you if you buy this solution</h6>
-                       <div class="row mb-4">
+                        <div class="row mb-4">
                           <div class="col-md-6">
                               <p><i class="fa fa-check-circle"></i>Beautiful Design</p>
                               <p><i class="fa fa-check-circle"></i>Responsive Design</p>
+                                 <p><i class="fa fa-check-circle"></i>Free Domain name</p>
                           </div>
                           <div class="col-md-6">
                               <p><i class="fa fa-check-circle"></i>24/7 Customer support</p>
                               <p><i class="fa fa-check-circle"></i>Working features</p>
+                            <p><i class="fa fa-check-circle"></i>24/7 Corporate email</p>
                           </div>
                       </div>
                       <router-link to="/request" class="request__btn">Request Product</router-link>
