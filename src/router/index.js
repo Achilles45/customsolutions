@@ -13,6 +13,7 @@ import Affiliate from '../views/Affiliate'
 import Register from '../views/Register'
 import Login from '../views/Login'
 import Dashboard from '../views/Dashboard'
+import Request from '../views/Request'
 
 Vue.use(VueRouter)
 
@@ -92,6 +93,11 @@ Vue.use(VueRouter)
     meta:{
       requiresAuth: true
     }
+  },
+  {
+    path: '/request',
+    name: 'Request',
+    component: Request
   },
 ]
 
