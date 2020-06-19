@@ -12,6 +12,7 @@ import Contact from '../views/Contact'
 import Affiliate from '../views/Affiliate'
 import Register from '../views/Register'
 import Login from '../views/Login'
+import Dashboard from '../views/Dashboard'
 
 Vue.use(VueRouter)
 
@@ -83,6 +84,14 @@ Vue.use(VueRouter)
     path: '/affiliate/login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/dashboard',
+    name: 'dashboard',
+    component: Dashboard,
+    meta:{
+      requiresAuth: true
+    }
   },
 ]
 

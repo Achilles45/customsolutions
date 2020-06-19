@@ -7,6 +7,7 @@
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <h1>Become an affiliate</h1>
+                <p>It is free and easy to begin</p>
                 <form @submit.prevent="register()">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Full Name *" v-model="name">
@@ -40,7 +41,10 @@
                      <div v-if="success" class="alert alert-success">
                         {{ success }}
                     </div>
-                    <button type="submit" class="register__btn">{{ text }}</button>
+                    <div v-if="loading" class="loader text-center">
+                        <img src="../assets/images/loader.gif" class="loader__img" alt="">
+                    </div>
+                    <button type="submit" class="register__btn">Create Account</button>
                 </form>
             </div>
             <div class="col-md-3"></div>
@@ -70,18 +74,39 @@ export default {
             repeat__password: null,
             err: null,
             success: null,
-            text: 'Sign In'
+            loading:false
         }
     },
     methods:{
         register(){
             //Check if all fields has been filled out
             if(!this.name || !this.email || !this.phone || !this.password || !this.repeat__password){
-                this.err = "jdalfajkdfhakjf"
+                this.err = "Error! Please completely fill the form and try again"
                 this.text = ''
             }else{
-                this.success = 'Successful'
+                this.loading = true
+               firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
+               .then(() => {
+                    db.collection('affiliates').add({
+                    name: this.name,
+                    email: this.email,
+                    phone: this.phone
+                })
+               })
+                .then(()=>{
+                    this.loading = false;
+                    this.success = 'Account successfully created. Redirecting to your dashboardin 5 seconds'
+                    this.redirectToDashboard();
+                })
+                .catch(err => {
+                    this.err = err.message
+                })
             }
+        },
+         redirectToDashboard(){
+            setTimeout(() => {
+                this.$router.push({name: 'dashboard'})
+            }, 5000);
         }
     }
 }
@@ -92,11 +117,13 @@ export default {
 .register__content{
     padding: 5rem 0;
     h1{
-        font-weight: bolder;
-        color: #000;;
+        font-weight: bold;
+        color: #2b2b2b;;
         font-size: 2.4rem;
         text-transform: uppercase;
-        text-shadow: 0.01em 0.01em 0.03em rgba(0,0,0,.5);
+    }
+    p{
+        color: #627081;
     }
     form{
         margin-top: 2rem;
@@ -108,13 +135,17 @@ export default {
             border-bottom: 1px solid #ccc;
             margin-bottom: 2rem;
             &::placeholder{
-                color: #2b2b2b;
+                color: #627081;
                 font-size: .92rem;
             }
         }
         small{
             color: #2b2b2b;
             font-size: .9rem;
+        }
+        .loader__img{
+            max-width: 100px;
+            height: auto;
         }
         .register__btn{
              background: linear-gradient(to right, $secondary-color , $tertiary-color);
@@ -135,7 +166,6 @@ export default {
 @media only screen and (max-width: 600px){
     h1{
         font-size: 1.7rem !important;
-        text-align: center;
         line-height: 1.6;
     }
 }
