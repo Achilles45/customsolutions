@@ -11,14 +11,14 @@
             <br /><br />
             <ul>
                <li><router-link to="/dashboard/overview"><i class="fa fa-cubes icons"></i>&nbsp;&nbsp; Overview</router-link></li><hr> 
-                <li><router-link to="/dashboard/profile"><i class="fa fa-users icons"></i>&nbsp;&nbsp; Profile</router-link></li><hr>
-                 <li><router-link to="/dashboard/withdrawal"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Make Withdrawal</router-link></li><hr> 
+                <li><router-link to="/dashboard/profile"><i class="fa fa-users icons"></i>&nbsp;&nbsp; Profile</router-link></li><hr> 
+                <li><router-link to="/dashboard/withdrawal"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Make Withdrawal</router-link></li><hr> 
                <li @click="logOut()" class="logout"><i class="fa fa-database icons"></i>&nbsp;&nbsp; Logout</li><hr>
             </ul>
             <br><br><br><br>
            </div>
-           <div class="dashboard__right">
-               <div class="dashoard__heading d-none d-md-block">
+           <div class="dashboard__right ">
+             <div class="dashoard__heading d-none d-md-block">
                  <div class="heading__content d-flex justify-content-between">
                       <div class="toggler">
                       <i class="fa fa-bars"></i>
@@ -28,53 +28,45 @@
                   </div>
                  </div>
                </div>
-              <div class="right__wrapper">
-                  <div class="heading d-flex justify-content-between">
+               <div class="right__wrapper">
+                   <div class="heading d-flex justify-content-between">
                   <div class="content">
                    <h5>Welcome Back!</h5>
                       <h4>{{ name }}</h4>
-                      <!-- <small>{{ firstCode }}</small> -->
-                  <!-- <small>{{ accountNumber }}</small> -->
                   </div>
-                    <div @click.prevent="show()" class="navbar__toggler">
-                      <i class="fa fa-bars"></i>
-                  </div>
-                  <hr>
               </div>
-              <div id="dashboard">
-             <small>This is a summary of your activities on this platform</small>
+              <div>
+             <small>This is your profile information on our platform</small>
              <hr>
-                  <div class="summary__wrapper">
-                  <div class="summary__card one pt-4">
-                     <i class="fa fa-users"></i>
-                     <div class="content pl-4">
-                         <h6>Total Referrals</h6>
-                         <h5>{{total_referrals}} Referrals</h5>
-                     </div>
-                  </div>
-                    <div class="summary__card two pt-4">
-                     <i class="fa fa-credit-card"></i>
-                     <div class="content pl-4">
-                         <h6>Total Earnings</h6>
-                         <h5>&#8358; {{ total_earnings }}.00</h5>
-                     </div>
-                  </div>
-                   <div class="summary__card three pt-4">
-                     <i class="fa fa-cubes"></i>
-                     <div class="content pl-4">
-                         <h6>Available Balance</h6>
-                          <h5>&#8358; {{ available_balance }}.00</h5>
-                     </div>
-                  </div>
-              </div>
-              </div>
-              <hr>
-              <p>You can share the link (referral ID) below to anyone and when they use our services or products, you get 5% commission</p>
-              <p>Referral ID : {{ id }}</p>
+                  <form>
+                        <div class="form-group">
+                          <label for="fname">Full Name *</label>
+                          <input type="text" class="form-control" disabled v-bind:value="name">
+                        </div>
+                        <div class="form-group">
+                          <label for="fname">Your Referral ID *</label>
+                          <input type="text" class="form-control" disabled v-bind:value="id">
+                        </div>
+                     <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="email">Email Address *</label>
+                          <input type="text" class="form-control" disabled v-bind:value="email">
+                        </div>
+                      </div>
+                       <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="phone">Phone Number *</label>
+                          <input type="text" class="form-control" disabled v-bind:value="phone">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
               </div>
             <!--End of Dashboard
             =========================-->
               <br>
+           </div>
            </div>
         </div>
     </div>
@@ -87,10 +79,8 @@ export default {
         return{
             email:null,
             name:null,
+            phone:null,
             id:null,
-            total_referrals: null,
-            total_earnings: null,
-            available_balance: null
         }
     },
      methods:{
@@ -98,20 +88,11 @@ export default {
             const navLeft = document.querySelector('#dashboard__left')
             navLeft.classList.toggle('navLeft')
         },
-        //Remove the left section of the dashbord
-        shiftLeft(){
-            const navLeft = document.querySelector('#dashboard__left')
-            const toggler = document.querySelector('.toggler');
-            toggler.addEventListener('click', ()=>{
-                navLeft.classList.remove()
-            })
-
-        },
          //Function for the user to logout
         logOut:function(){
            firebase.auth().signOut()
            .then(()=>{
-               this.$router.push({name: 'Index'})
+               this.$router.push({name: 'Signin'})
            })
         },
     },
@@ -125,9 +106,7 @@ export default {
                 this.name = doc.data().name,
                 this.email = doc.data().email,
                 this.id = doc.data().user_id,
-                this.available_balance = doc.data().available_balance,
-                this.total_referrals = doc.data().total_referrals,
-                this.total_earnings = doc.data().total_earnings
+                this.phone = doc.data().phone
             })
         })
     }
@@ -141,7 +120,7 @@ export default {
     display: grid;
     grid-template-columns:  260px 1fr;
     // grid-gap: 30px;
-    .dashboard__left{
+  .dashboard__left{
         background: #252525;
         padding: 1rem 2rem;
         color:#fff;
@@ -157,7 +136,7 @@ export default {
         }
         h5{
             opacity: .8;
-            font-size: 1rem;
+            font-size: 1.1rem;
             padding-bottom: .5rem;
         }
         ul{
@@ -165,7 +144,7 @@ export default {
                 cursor: pointer !important;
                 // border-bottom: 1px solid #ccc;
                 line-height: 3;
-                font-size: .8rem;
+               font-size: .8rem;
                 opacity: .7;
                 color: #fff;
                 text-decoration: none !important;
@@ -178,47 +157,40 @@ export default {
     .dashboard__right{
         background: #F4F6F9;
         // padding: 3rem 2.5rem;
-        .right__wrapper{
-              padding: 2rem 2rem;
-        }
        small{
-            color:#627081;
+           color:#627081;
            font-size: .8rem;
            font-weight: bold;
            opacity: .8;
        }
-       .dashoard__heading{
+       .right__wrapper{
+              padding: 2rem 2rem;
+        }
+        .dashoard__heading{
            background-color: #FBAE1C;
            padding: 1.2rem 2rem;
            display: flex;
            justify-content: space-between;
-          h6{
-               font-size: .9rem;
-               color: #fff;
-          }
        }
         .summary__wrapper{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            grid-gap: 20px;
-            margin-top: 1rem;
+            grid-gap: 30px;
+            // margin-top: 2rem;
             .summary__card{
                 display: flex;
-                padding: .5rem 2rem;
+                padding: 1.3rem 2rem;
                 border-radius: 4px;
                 // font-size: .9rem;
                 color:#fff !important;
                 margin-bottom: 2rem;
                 p{
                     color:#fff !important;
-                    padding-top: 0rem;
+                    padding-top: .4rem;
                     opacity: .9;
                     font-size: .7rem;
                     line-height: 1.4rem;
 
-                }
-                h6{
-                    font-size: 1rem !important;
                 }
                 h5{
                     color:#fff;
@@ -226,31 +198,28 @@ export default {
                 }
             }
             .one{
-                    background: #00C292;
+                    background: #ff808b;
                 }
                 .two{
                     background: #757afc;
                 }
                 .three{
-                    background: #EF5350;
+                    background: #0facf3;
                 }
                 .four{
                     background: #251F68;
-                   
                 }
-                .card__4{
-                    background: $primary-color;
-                    padding: 1rem .5rem !important;
-                    h6{
-                        font-size: .9rem !important;
-                    }
-                }
-                
         }
-        .note{
-            color: #627081 !important;
-            font-size: .8rem;
-            line-height: 1.7;
+            .red{
+            background: rgb(161, 39, 39);
+            color: #fff;
+            padding: 1rem .5rem;
+            border-radius: 3px;
+            font-size: .85rem;
+            opacity: .9;
+             a{
+                color:#fff !important;
+            }
         }
             //REQUEST FORM
             form{
@@ -281,7 +250,7 @@ export default {
                      font-size: .9rem;
                  }
                  .request__btn{
-                     background: $secondary-color;
+                     background: #251F68;
                      color:#fff;
                      margin-top: 1.5rem;
                      border-radius: 3px;
@@ -302,17 +271,6 @@ export default {
             font-weight: bold;
             padding-bottom: 1.2rem;
             padding-top: 1rem;
-        }
-        .red{
-            background: rgb(161, 39, 39);
-            color: #fff;
-            padding: 1rem .5rem;
-            border-radius: 3px;
-            font-size: .85rem;
-            opacity: .9;
-             a{
-                color:#fff !important;
-            }
         }
         p{
             padding-top:1rem;
@@ -349,9 +307,6 @@ export default {
 .dashboard__right{
     width: 100vw !important;
     padding: 3rem 1.2rem !important;
-     .right__wrapper{
-              padding: 1rem .5rem !important;
-        }
 }
 .summary__wrapper{
     grid-gap: 5px !important;

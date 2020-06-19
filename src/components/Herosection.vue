@@ -18,7 +18,7 @@
             <p>We pride ourselves in building solutions that works. From the simplest web pages to highly complex web and mobile applications, you are sure of getting solutions that specifically suits your business needs.</p>
             <div class="pb-5">
               <div class="button__holder">
-                <router-link to="/" class="hero__btn">Start A Project&nbsp;&nbsp; <i class="fa fa-long-arrow-alt-right"></i></router-link>
+                <router-link to="/request" class="hero__btn">Start A Project&nbsp;&nbsp; <i class="fa fa-long-arrow-alt-right"></i></router-link>
               </div>
             </div>
           </div>

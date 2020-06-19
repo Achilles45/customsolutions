@@ -15,6 +15,10 @@
                         <label for="name">Mobile Number *</label>
                         <input type="tel" class="form-control" placeholder="Phone Number">
                     </div>
+                    <div class="form-group">
+                        <label for="name">Referral ID (Optional) *</label>
+                        <input type="tel" class="form-control" placeholder="Referral ID">
+                    </div>
                     <label for="message">Tell us about what you want to build</label>
                     <textarea name="" class="form-control" id="" cols="30" rows="10" placeholder="Do you need a website or graphics design or mobile application? Tell us ..."></textarea>
                     <div class="text-center">
@@ -82,12 +86,13 @@ components:{
             background: linear-gradient(to right, $secondary-color , $tertiary-color);
             color: #fff;
             text-decoration: none;
-            padding: 1.4rem 5rem;
+            padding: 1.2rem 5rem;
             border-radius: 50px;
             transition: all ease-in-out .5s;
             border: none;
+            width: 100%;
             &:hover{
-            padding: 1.4rem 5rem;
+            background: $secondary-color;
             }
   }
         }

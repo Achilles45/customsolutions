@@ -16,8 +16,8 @@
          <div class="col-md-1"></div>
          <div class="col-md-5">
            <h3>5+ YEARS OF BUILDING AMAZING USER EXPERIENCES</h3>
-           <p>We enable businesses to take advantage of the numerous opportunities that the internet provides today. The COVID19 pandemic has caused a shift into how businesses are conducted and if your business has no online presense, then you are seriously loosing out. Our solutions either in website design and development, graphics design, mobile applications development are beautifully crafted with your users in mind. Talk to us today!</p>
-           <router-link to="/" class="request__btn">Begin a Project</router-link>
+           <p>We enable businesses to take advantage of the numerous opportunities that the internet provides today. The COVID-19 pandemic has caused a shift into how businesses are conducted and if your business has no online presense, then you are seriously loosing out. Our solutions either in website design and development, graphics design, mobile applications development are beautifully crafted with your users in mind. Talk to us today!</p>
+           <router-link to="/request" class="request__btn">Begin a Project</router-link>
          </div>
        </div>
       </div>
@@ -44,7 +44,7 @@
            <div class="col-md-3">
             <img src="../assets/images/innovation.svg" class="icons" alt="">
             <h5>Innovated Solutions</h5>
-            <p>Our products and services are innovative and custom built to suit your business or brand.</p>
+            <p>Our products and services are innovative and custom built to suit your business needs.</p>
           </div>
            <div class="col-md-3">
           <img src="../assets/images/money.svg" class="icons" alt="">
@@ -120,7 +120,7 @@ export default {
 @import '../assets/styles/_colors';
 .about{
   .about__wrapper{
-    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url('../assets/images/img1.jpeg');
+    background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url('../assets/images/img1.jpeg');
     color: #fff;
     padding: 4rem 0;
     background-repeat: no-repeat;
@@ -197,7 +197,7 @@ export default {
     .icons{
       max-width: 60px;
       height: auto;
-      padding-bottom: .8rem;
+      padding-bottom: 1rem;
     }
     h5{
       font-weight: bold;
@@ -207,7 +207,9 @@ export default {
     p{
       color: #627081;
       font-size: .9rem;
-      opacity: .8;
+      opacity: .9;
+      line-height: 1.6;
+      padding-top: 1rem;
     }
   }
 

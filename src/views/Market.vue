@@ -74,7 +74,7 @@
                      <div class="col-md-7">
                           <h1>Begin A Project</h1>
                             <p>You have an idea or you want to digitally project your business? Let's help you bring your idea to life. Talk to us today!</p>
-                            <router-link to="/" class="link__btn">Request a Quote</router-link>
+                            <router-link to="/request" class="link__btn">Request a Quote</router-link>
                      </div>
                  </div>
               </div>
@@ -99,7 +99,7 @@ export default {
 @import '../assets/styles/_colors';
 .market{
     .market__wrapper{
-        background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url('../assets/images/img1.jpeg');
+        background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url('../assets/images/img1.jpeg');
         color: #fff;
         padding: 5rem 0;
         background-repeat: no-repeat;

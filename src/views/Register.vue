@@ -24,15 +24,15 @@
                      <div class="form-group">
                         <input type="password" class="form-control" placeholder="Repeat Password *" v-model="repeat__password">
                     </div>
-                    <!-- <div class="form-group">
-                        <select name="" id="" class="form-control">
+                    <div class="form-group">
+                        <!-- <select name="" id="" class="form-control">
                             <option value="" disabled selected>Please select your name</option>
                             <option value="">Okoro</option>
                             <option value="">Okoro</option>
                             <option value="">Okoro</option>
                             <option value="">Okoro</option>
-                        </select>
-                    </div> -->
+                        </select> -->
+                    </div>
                     <small>By clicking on the register button, you agree to our terms and conditions</small><br>
                     <small>Have an account already? <router-link to="/affiliate/login">Log in</router-link></small><br><br>
                     <div v-if="err" class="alert alert-danger">
@@ -83,19 +83,26 @@ export default {
             if(!this.name || !this.email || !this.phone || !this.password || !this.repeat__password){
                 this.err = "Error! Please completely fill the form and try again"
                 this.text = ''
-            }else{
+            }else if(this.password != this.repeat__password){
+                this.err = 'Error. Your passwords do not match'
+            }
+            else{
                 this.loading = true
                firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
-               .then(() => {
+               .then((cred) => {
                     db.collection('affiliates').add({
                     name: this.name,
                     email: this.email,
-                    phone: this.phone
+                    phone: this.phone,
+                    total_referrals: "0",
+                    total_earnings: "0",
+                    available_balance: "0",
+                    user_id: cred.user.uid
                 })
                })
                 .then(()=>{
                     this.loading = false;
-                    this.success = 'Account successfully created. Redirecting to your dashboardin 5 seconds'
+                    this.success = 'Account successfully created. Redirecting to your dashboard in 5 seconds...'
                     this.redirectToDashboard();
                 })
                 .catch(err => {

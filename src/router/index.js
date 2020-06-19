@@ -14,6 +14,8 @@ import Register from '../views/Register'
 import Login from '../views/Login'
 import Dashboard from '../views/Dashboard'
 import Request from '../views/Request'
+import Profile from '../views/Profile'
+import Withdrawal from '../views/Withdrawal'
 
 Vue.use(VueRouter)
 
@@ -87,9 +89,25 @@ Vue.use(VueRouter)
     component: Login
   },
   {
-    path: '/dashboard',
+    path: '/dashboard/overview',
     name: 'dashboard',
     component: Dashboard,
+    meta:{
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/dashboard/profile',
+    name: 'profile',
+    component: Profile,
+    meta:{
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/dashboard/withdrawal',
+    name: 'Withdrawal',
+    component: Withdrawal,
     meta:{
       requiresAuth: true
     }
