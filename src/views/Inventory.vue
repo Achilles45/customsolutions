@@ -27,7 +27,7 @@
                           <div class="col-md-6">
                               <p><i class="fa fa-check-circle"></i>24/7 Customer support</p>
                               <p><i class="fa fa-check-circle"></i>Working features</p>
-                            <p><i class="fa fa-check-circle"></i>24/7 Corporate email</p>
+                            <p><i class="fa fa-check-circle"></i>Corporate email</p>
                           </div>
                       </div>
                       <router-link to="/request" class="request__btn">Request Product</router-link>
@@ -76,12 +76,12 @@ export default {
             font-weight: bold;
             color: #2b2b2b;
         }
-        p{
+         p{
             color: #627081;
-            font-weight: 400;
-            line-height: 2;
-            // padding-bottom: 2rem;
             font-size: .95rem;
+            padding-bottom: 1rem;
+            line-height: 2.2;
+            opacity: .9;
         }
         h6{
             font-weight: bold;

@@ -14,7 +14,7 @@
                       <img src="../assets/images/ecommerce2.png" class="img-fluid" alt=""><br><br>
                   </div>
                   <div class="col-md-5">
-                      <h3>Complete eCommerce Solution</h3>
+                      <h2>Complete eCommerce Solution</h2>
                       <hr>
                       <p>If you are not selling your products or services online in 2020, then you are seriously loosing and you need to get yourselve our custom made e-commerce solution. <br> We can create for you a beautiful ecommerce website where you begin selling your products, manage sales, manage products and inventory all from the comfort of your mobile phone or laptop. Don't be left out. You need to start selling onine today</p>
                       <h6>What we promise you if you buy this solution</h6>
@@ -27,7 +27,7 @@
                           <div class="col-md-6">
                               <p><i class="fa fa-check-circle"></i>24/7 Customer support</p>
                               <p><i class="fa fa-check-circle"></i>Working features</p>
-                            <p><i class="fa fa-check-circle"></i>24/7 Corporate email</p>
+                            <p><i class="fa fa-check-circle"></i>Corporate email</p>
                           </div>
                       </div>
                       <router-link to="/request" class="request__btn">Request Product</router-link>
@@ -71,21 +71,21 @@ export default {
     }
     .details__content{
         padding: 4rem 0;
-        h3{
+        h2{
             // padding-top: 1rem;
-            font-weight: bold;
-            color: #2b2b2b;
+            font-weight: 500;
+            color: #000;
         }
         p{
             color: #627081;
-            font-weight: 400;
-            line-height: 2;
-            // padding-bottom: 2rem;
             font-size: .95rem;
+            padding-bottom: 1rem;
+            line-height: 2.2;
+            opacity: .9;
         }
         h6{
             font-weight: bold;
-            color: #2b2b2b;
+            color: #627081;
         }
         .request__btn{
             background: $primary-color;

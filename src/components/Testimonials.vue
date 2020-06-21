@@ -16,88 +16,19 @@
 	<!-- Wrapper for carousel items -->
 	<div class="carousel-inner">		
 		<div class="item carousel-item active">
-			<div class="img-box"><img src="../assets/images/anita.jpg" alt=""></div>
-			<p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quisquam animi. Necessitatibus at voluptatem in?</p>
-			<p class="overview"><b>Achilles E.</b></p>
-			<div class="star-rating">
-				<ul class="list-inline">
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-				</ul>
-			</div>
-		</div>
-		<div class="item carousel-item">
-			<div class="img-box"><img src="../assets/images/achilles.jpg" alt=""></div>
-			<p class="testimonial">Thank you Diamond Investment.. Am so happy to be part of this platform</p>
-			<p class="overview"><b> Abajingin Ayokanmi D</b>Investor</p>
-			<div class="star-rating">
-				<ul class="list-inline">
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-				</ul>
-			</div>
-		</div>
-		<div class="item carousel-item">
-			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
-		<p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quisquam animi. Necessitatibus at voluptatem in?</p>
-			<p class="overview"><b>Achilles E.</b></p>
-			<div class="star-rating">
-				<ul class="list-inline">
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-				</ul>
-			</div>
+			<div class="img-box"><img src="../assets/images/Famous.jpg" alt=""></div>
+			<p class="testimonial">My experience with Custom Solutions has been refreshingly different in the web/creative field. They were extremely clear in outlining the project and scope of work so there was never any confusion or unmet expectations. They delivered each phase of the project in lesser time than they originally projected.</p>
+			<p class="overview"><b>CEO Jubilee Rentals</b></p>
 		</div>	
 		<div class="item carousel-item">
-			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
-			<p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quisquam animi. Necessitatibus at voluptatem in?</p>
-			<p class="overview"><b>Achilles E.</b></p>
-			<div class="star-rating">
-				<ul class="list-inline">
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					</ul>
-			</div>
+			<div class="img-box"><img src="../assets/images/Famous.jpg" alt=""></div>
+			<p class="testimonial">My experience with Custom Solutions has been refreshingly different in the web/creative field. They were extremely clear in outlining the project and scope of work so there was never any confusion or unmet expectations. They delivered each phase of the project in lesser time than they originally projected.</p>
+			<p class="overview"><b>CEO Jubilee Rentals</b></p>
 		</div>	
 		<div class="item carousel-item">
-			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
-			<p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quisquam animi. Necessitatibus at voluptatem in?</p>
-			<p class="overview"><b>Achilles E.</b></p>
-			<div class="star-rating">
-				<ul class="list-inline">
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-				</ul>
-			</div>
-		</div>		
-		<div class="item carousel-item">
-			<div class="img-box"><img src="../assets/images/user.png" alt=""></div>
-			<p class="testimonial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quisquam animi. Necessitatibus at voluptatem in?</p>
-			<p class="overview"><b>Achilles E.</b></p>
-			<div class="star-rating">
-				<ul class="list-inline">
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-					<li class="list-inline-item"><i class="fa fa-star"></i></li>
-				</ul>
-			</div>
+			<div class="img-box"><img src="../assets/images/Famous.jpg" alt=""></div>
+			<p class="testimonial">My experience with Custom Solutions has been refreshingly different in the web/creative field. They were extremely clear in outlining the project and scope of work so there was never any confusion or unmet expectations. They delivered each phase of the project in lesser time than they originally projected.</p>
+			<p class="overview"><b>CEO Jubilee Rentals</b></p>
 		</div>		
 	</div>
 	<!-- Carousel controls -->
@@ -123,7 +54,7 @@ export default {
 <style lang="scss" scoped>
 .testimonial{
     padding: 4rem 0;
-    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url('../assets/images/img1.jpeg');
+    background: url('../assets/images/img10.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -157,11 +88,12 @@ h2::after {
     border: none !important;
 }
 .carousel .item {
-	color: #999;
-	font-size: 14px;
+	color: #fff;
+	font-size: .9rem;
     text-align: center;
 	overflow: hidden;
-    min-height: 340px;
+	opacity: .8;
+	line-height: 2;
 }
 .carousel .item a {
 	color: #eb7245;
@@ -187,7 +119,7 @@ h2::after {
 	padding-bottom: 5px;
 }
 .carousel .overview b {
-	color: #333;
+	color: #fff;
 	font-size: 15px;
 	text-transform: uppercase;
 	display: block;	

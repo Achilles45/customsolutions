@@ -17,7 +17,7 @@
                   <div class="col-md-1"></div>
                   <div class="col-md-5 text">
                       <h2>Earn 5% when you refer a client to us</h2>
-                      <p>We have an amazing affiliate program that allows you to earn money irrespective of your skills when you refer someone to buy any of our products or services. The 5% of the total value of the sales will be paid instantly to your back account. No stress as you can actually do this from home.</p>
+                      <p>We have an amazing affiliate program that allows you to earn money irrespective of your skills when you refer someone to buy any of our products or services. The 5% of the total value of the sale will be paid instantly to your back account. No stress as you can actually do this from home.</p>
                       <div class="button__holder">
                           <router-link to="/affiliate/register" class="affiliate__btn register">Create Account</router-link>
                           <router-link to="/affiliate/login" class="affiliate__btn login">Login</router-link>
@@ -44,9 +44,9 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/styles/_colors';
 .detials__wrapper{
-    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url('../assets/images/img1.jpeg');
+    background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url('../assets/images/img1.jpeg');
     color: #fff;
-    padding: 5rem 0;
+    padding: 4rem 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

@@ -17,9 +17,9 @@
               </div>
               <img src="../assets/images/website.jpg" class="img-fluid service__img" alt="">
               <div class="services__body">
-                <h5><router-link to="/" class="heading">Website Design and Development</router-link></h5>
+                <h5><router-link to="/services/website-design" class="heading">Website Design and Development</router-link></h5>
                 <p>Get beautifully crafted, functional websites and web applications that will increase leads for your business today.</p>
-                <!-- <router-link to="/about" class="card__link">Read more <i class="fa fa-long-arrow-alt-right"></i></router-link> -->
+                <router-link to="/services/website-design" class="card__link">Read more <i class="fa fa-long-arrow-alt-right"></i></router-link>
               </div>
             </div>
              <div class="service__card">
@@ -31,7 +31,7 @@
               <div class="services__body">
                 <h5><router-link to="/" class="heading">Branding and Graphics Design</router-link></h5>
                 <p>Engage with your customers with our colorful and expertly designed graphics for your brand</p>
-                <!-- <router-link to="/" class="card__link">Read more <i class="fa fa-long-arrow-alt-right"></i></router-link> -->
+                <router-link to="/services/graphics-design" class="card__link">Read more <i class="fa fa-long-arrow-alt-right"></i></router-link>
               </div>
             </div>
             </div>
@@ -44,7 +44,7 @@
               <div class="services__body">
                 <h5><router-link to="/" class="heading">Mobile Applications Development</router-link></h5>
                 <p>You need a mobile app for your business or idea, we've got your back. Reach out to us today!</p>
-                <!-- <router-link to="/" class="card__link">Read more <i class="fa fa-long-arrow-alt-right"></i></router-link> -->
+                <router-link to="/services/app-development" class="card__link">Read more <i class="fa fa-long-arrow-alt-right"></i></router-link>
               </div>
             </div>
             </div>
@@ -123,13 +123,11 @@ export default {
         padding: 35px 25px 32px;
         background: #fff;
         p{
-          color: #676767;
-          font-size: .9rem;
+          color: #627081;
           line-height: 1.7;
+          opacity: .8;
+          font-size: .95rem;
           padding-top: .7rem;
-          // opacity: .9;
-          padding-bottom: .5rem;
-          font-weight: 500;
         }
         .heading{
           color:#484848;
@@ -149,7 +147,7 @@ export default {
           font-weight: 400;
           font-size: 1rem;
           &:hover{
-            color: $tertiary-color;
+            color: $secondary-color;
           }
         }
         .fa-long-arrow-alt-right{

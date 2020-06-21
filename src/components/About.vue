@@ -52,12 +52,12 @@ export default {
         }
     }
          p{
-        color: #676767;
-        font-size: .95rem;
-        padding-top: .7rem;
+        color: #627081;
         line-height: 2;
+        opacity: .8;
+        font-size: .95rem;
         padding-bottom: 2rem;
-        opacity: .9;
+        padding-top: 1rem;
     }
     .about__btn{
         background: $primary-color;

@@ -6,6 +6,7 @@
    <Services />
    <Testimonials />
    <Projects />
+   <Affiliates />
    <Banner />
    <Footer />
   </div>
@@ -19,6 +20,7 @@ import About from '@/components/About.vue'
 import Services from '@/components/Services.vue'
 import Testimonials from '@/components/Testimonials.vue'
 import Projects from '@/components/Projects.vue'
+import Affiliates from '@/components/Affiliates.vue'
 import Banner from '@/components/Banner.vue'
 import Footer from '@/components/Footer.vue'
 export default {
@@ -29,6 +31,7 @@ components:{
   Services,
   Testimonials,
   Projects,
+  Affiliates,
   Banner,
   Footer
 }

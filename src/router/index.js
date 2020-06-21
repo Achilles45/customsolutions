@@ -16,6 +16,9 @@ import Dashboard from '../views/Dashboard'
 import Request from '../views/Request'
 import Profile from '../views/Profile'
 import Withdrawal from '../views/Withdrawal'
+import WebsiteDesign from '../views/WebsiteDesign'
+import Designs from '../views/Designs'
+import MobileApps from '../views/MobileApps'
 
 Vue.use(VueRouter)
 
@@ -116,6 +119,21 @@ Vue.use(VueRouter)
     path: '/request',
     name: 'Request',
     component: Request
+  },
+  {
+    path: '/services/website-design',
+    name: 'WebsiteDesign',
+    component: WebsiteDesign
+  },
+  {
+    path: '/services/graphics-design',
+    name: 'Designs',
+    component: Designs
+  },
+  {
+    path: '/services/app-development',
+    name: 'MobileApps',
+    component: MobileApps
   },
 ]
 

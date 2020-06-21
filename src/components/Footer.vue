@@ -8,7 +8,7 @@
               </div>
               <div class="col-md-4 contact">
                   <h6>Contact Details</h6>
-                  <p><i class="far fa-envelope-open"></i> &nbsp;&nbsp; <a href="mailto: support@customsolutions.com">support@customsolutions.com</a></p>
+                  <p><i class="far fa-envelope-open"></i> &nbsp;&nbsp; <a href="mailto: support@customsolutionsng.com">support@customsolutionsng.com</a></p>
                   <p><i class="fa fa-phone"></i> &nbsp;&nbsp; <a href="tel:08103515205">(+234)8103515205</a></p>
                   <p><i class="fa fa-map-marker"></i> &nbsp;&nbsp; Remote</p>
               </div>
@@ -41,7 +41,7 @@ footer{
     }
     p{
         font-size: .8rem;
-        opacity: .4;
+        opacity: .6;
         line-height: 1.8;
     }
     .fa-envelope-open, .fa-phone, .fa-map-marker{

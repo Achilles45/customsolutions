@@ -101,7 +101,7 @@ export default {
     .market__wrapper{
         background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url('../assets/images/img1.jpeg');
         color: #fff;
-        padding: 5rem 0;
+        padding: 4rem 0;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -136,10 +136,11 @@ export default {
                 // padding-bottom: 1rem;
             }
             p{
-                color: #676767;
-                font-size: .9rem;
+                color: #627081;
+                font-size: .95rem;
                 padding-bottom: 1rem;
                 line-height: 1.6;
+                opacity: .9;
             }
             .market__btn{
                 background: $primary-color;

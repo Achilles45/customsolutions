@@ -78,7 +78,7 @@ export default {
        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
        grid-gap: 30px;
        padding-top: 4rem;
-       margin-bottom: 2.5rem;
+       margin-bottom: .5rem;
        .project__card{
         //    background: #373A49;
            border-radius: 4px;
