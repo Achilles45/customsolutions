@@ -102,7 +102,7 @@ export default {
                })
                 .then(()=>{
                     this.loading = false;
-                    this.success = 'Account successfully created. Redirecting to your dashboard in 5 seconds...'
+                    this.success = 'Account successfully created. Redirecting to your dashboard in 3 seconds...'
                     this.redirectToDashboard();
                 })
                 .catch(err => {
@@ -113,7 +113,7 @@ export default {
          redirectToDashboard(){
             setTimeout(() => {
                 this.$router.push({name: 'dashboard'})
-            }, 5000);
+            }, 3000);
         }
     }
 }

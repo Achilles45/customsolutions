@@ -180,6 +180,12 @@ export default {
         // padding: 3rem 2.5rem;
         .right__wrapper{
               padding: 2rem 2rem;
+            .navbar__toggler{
+                    color:$primary-color;
+                    position: absolute;
+                    right: 5%;
+                    top: 8%;
+                }
         }
        small{
             color:#627081;
@@ -195,7 +201,7 @@ export default {
           h6{
                font-size: .9rem;
                color: #fff;
-          }
+          } 
        }
         .summary__wrapper{
             display: grid;

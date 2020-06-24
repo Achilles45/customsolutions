@@ -19,6 +19,7 @@ import Withdrawal from '../views/Withdrawal'
 import WebsiteDesign from '../views/WebsiteDesign'
 import Designs from '../views/Designs'
 import MobileApps from '../views/MobileApps'
+import firebase from 'firebase'
 
 Vue.use(VueRouter)
 
@@ -139,7 +140,27 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
   routes,
-  mode: 'history'
+  mode: 'history',
+  scrollBehavior (to, from, savedPosition){
+    return {x:0, y:0}
+  }
+})
+router.beforeEach((to, from, next) =>{
+  //Check if the route we are about to enter has a guard
+  if(to.matched.some(rec => rec.meta.requiresAuth)){
+    //Check auth state
+    let user = firebase.auth().currentUser
+    if(user){
+      //Grant the user access as he is signed in, proceed to user
+      next()
+    }else{
+      //Redirect to login
+      next({name: 'Login'})
+    }
+  }else{
+    //If the routes does not requires auth, then just proceed as normal
+    next()
+  }
 })
 
 export default router

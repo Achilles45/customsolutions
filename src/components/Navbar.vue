@@ -12,6 +12,7 @@
                       <li><router-link to="/marketplace" class="links">Marketplace</router-link></li>
                       <li><router-link to="/affiliate" class="links">Affiliate</router-link></li>
                       <li><router-link to="/contact" class="links">Contact Us</router-link></li>
+                      <li><router-link to="/affiliate/login" class="links login">Affiliate Login</router-link></li>
                   </ul>
               </div>
               <div @click="showNav()" class="navbar__toggler">
@@ -93,6 +94,18 @@ export default {
                 color: #fff;
                 font-size: .9rem;
             }
+            .login{
+                background: linear-gradient(to right, $secondary-color , $tertiary-color);
+                color: #fff;
+                padding: 1rem 1rem;
+                border-radius: 3px;
+                opacity: 1 !important;
+                font-weight: 400;
+                &:hover{
+                     background: $tertiary-color;
+                    //  transition: all ease-in .5s;
+                }
+            }
         }
         .navbar__toggler{
             display: none;
@@ -120,7 +133,7 @@ export default {
     transition: all ease-in .5s;
 }
 //MEDIA QUERIES
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1200px){
     .logo__img{
         max-width: 240px !important;
         height: auto;

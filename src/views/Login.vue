@@ -64,24 +64,31 @@ export default {
             //Check if the user has filled out the form
             if(!this.email || !this.password){
                 this.err = 'Please provide your credentials'
+                this.clearAlert();
             }else{
                 this.loading = true;
                 firebase.auth().signInWithEmailAndPassword(this.email, this.password)
                 .then(() => {
-                    this.loading = false
-                    this.text = 'Redirecting to your dashboard ....'
-                    this.redirectToDashboard();
+                    this.loading = true
+                    this.text = 'Redirecting to your dashboard in 3 seconds ...'
+                    this.$router.push({name: 'dashboard'})
                 })
                 .catch(err => {
                     this.loading = false
-                    this.err = 'Your credentials do not match'
+                    this.err = 'Your credentials do not match';
+                    this.clearAlert();
                 })
             }
         },
-        redirectToDashboard(){
+        // redirectToDashboard(){
+        //     setTimeout(() => {
+        //         this.$router.push({name: 'dashboard'})
+        //     }, 3000);
+        // },
+        clearAlert(){
             setTimeout(() => {
-                this.$router.push({name: 'dashboard'})
-            }, 5000);
+                document.querySelector('.alert').remove()
+            }, 3000);
         }
     }
 }
