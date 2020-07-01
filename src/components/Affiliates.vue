@@ -24,7 +24,8 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/styles/_colors';
 .affiliates{
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
+    padding-top: 2rem;
     h2{
     font-weight: bolder;
     color: #000;
