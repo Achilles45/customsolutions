@@ -146,7 +146,7 @@ export default {
         height: 100vh;
         bottom: 0;
         left: 0;
-        top: 15%;
+        top: 13%;
         width: 100%;
         display: none;
         ul{
