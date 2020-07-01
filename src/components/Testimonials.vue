@@ -20,16 +20,16 @@
 			<p class="testimonial">My experience with Custom Solutions has been refreshingly different in the web/creative field. They were extremely clear in outlining the project and scope of work so there was never any confusion or unmet expectations. They delivered each phase of the project in lesser time than they originally projected.</p>
 			<p class="overview"><b>CEO Jubilee Rentals</b></p>
 		</div>	
-		<div class="item carousel-item">
+		<!-- <div class="item carousel-item">
 			<div class="img-box"><img src="../assets/images/Famous.jpg" alt=""></div>
 			<p class="testimonial">My experience with Custom Solutions has been refreshingly different in the web/creative field. They were extremely clear in outlining the project and scope of work so there was never any confusion or unmet expectations. They delivered each phase of the project in lesser time than they originally projected.</p>
 			<p class="overview"><b>CEO Jubilee Rentals</b></p>
-		</div>	
-		<div class="item carousel-item">
+		</div>	 -->
+		<!-- <div class="item carousel-item">
 			<div class="img-box"><img src="../assets/images/Famous.jpg" alt=""></div>
 			<p class="testimonial">My experience with Custom Solutions has been refreshingly different in the web/creative field. They were extremely clear in outlining the project and scope of work so there was never any confusion or unmet expectations. They delivered each phase of the project in lesser time than they originally projected.</p>
 			<p class="overview"><b>CEO Jubilee Rentals</b></p>
-		</div>		
+		</div>		 -->
 	</div>
 	<!-- Carousel controls -->
 	<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">

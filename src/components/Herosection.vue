@@ -18,7 +18,7 @@
             <p>We pride ourselves in building solutions that works. From the simplest web pages to highly complex web and mobile applications, you are sure of getting solutions that specifically suits your business needs.</p>
             <div class="pb-5">
               <div class="button__holder">
-                <router-link to="/request" class="hero__btn">Start A Project&nbsp;&nbsp; <i class="fa fa-long-arrow-alt-right"></i></router-link>
+                <router-link to="/request" class="hero__btn">Request a Quote&nbsp;&nbsp; <i class="fa fa-long-arrow-alt-right"></i></router-link>
               </div>
             </div>
           </div>
@@ -65,9 +65,10 @@ export default {
      background: linear-gradient(to right, $secondary-color , $tertiary-color);
     color: #fff;
     text-decoration: none;
-    padding: 1.4rem 3rem;
+    padding: 1.4rem 2.5rem;
     border-radius: 50px;
     transition: all ease-in-out .5s;
+    font-size: 1rem;
     &:hover{
       padding: 1.4rem 3.5rem;
     }

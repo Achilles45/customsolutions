@@ -15,7 +15,7 @@
             <h5>The customer support team is always ready to answer all your questions</h5>
             <hr><br>
             <h6><i class="fa fa-home"></i>Contact Office</h6>
-            <p>Opposite main gate, University of Nigeria, Nsukka, Enugu State, Nigeria.</p>
+            <p>Remote</p>
             <h6><i class="far fa-envelope-open"></i>Email Address</h6>
             <p>support@customsolutionsng.com</p>
              <h6><i class="fa fa-phone"></i>Phone Number/Whatsapp</h6>

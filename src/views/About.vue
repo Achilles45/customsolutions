@@ -17,7 +17,7 @@
          <div class="col-md-5">
            <h3>5+ YEARS OF BUILDING AMAZING USER EXPERIENCES</h3>
            <p>We enable businesses to take advantage of the numerous opportunities that the internet provides today. The COVID-19 pandemic has caused a shift into how businesses are conducted and if your business has no online presense, then you are seriously loosing out. Our solutions either in website design and development, graphics design, mobile applications development are beautifully crafted with your users in mind. Talk to us today!</p>
-           <router-link to="/request" class="request__btn">Begin a Project</router-link>
+           <router-link to="/request" class="request__btn">Request a Quote</router-link>
          </div>
        </div>
       </div>
